@@ -1,8 +1,29 @@
 <keppler-view id='show_table'>
 <!-- Keppler Section -->
-<div class="container">
-  <div>
-  	<%= @table.inspect %>
+<div class="show-table container">
+  <div class="row">
+    <div class="col-lg-2">
+      <keppler-no-edit clasS="show-table-name">
+        <div class="zppl-table">
+          <div>
+            <h1>
+              <%= @table.name %>
+            </h1>
+          </div>
+        </div>
+      </keppler-no-edit>
+    </div>
+  	<div class="col-lg-6">
+      <keppler-no-edit clasS="open-table-form">
+        <%= simple_form_for @order, url: '', method: :post do |f| %>
+          <%= f.input :employee_id, label: false, collection: all_waiters.map { |w| [w.fullname, w.id]}, include_blank: false %>
+          <%= f.input :table_id, as: :hidden %>
+        	<div class="pull-right">
+          	<%= f.button :submit, value: "Abrir", class: "btn btn-primary" %>
+        	</div>
+        <% end %>
+      </keppler-no-edit>
+    </div>
   </div>
 </div>
 </keppler-view>

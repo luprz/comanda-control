@@ -4,13 +4,20 @@ es:
       comanda-control: Comanda control
       comanda-control-submenu:
         tables: Mesas
+        employees: Mesoneros
     permissions:
     models:
       singularize:
+        order: order
+        employee: mesonero
         table: mesa
       pluralize:
+        orders: orders
+        employees: mesonero
         tables: mesas
     modules:
+      admin/order: Order
+      admin/employees: Mesoneros
       admin/table: Mesa
     messages:
     actions:

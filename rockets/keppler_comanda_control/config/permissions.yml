@@ -1,4 +1,18 @@
 modules:
+  orders:
+    name: Order
+    model: KepplerComandaControlOrder
+    actions: [
+      'index', 'create', 'update', 'destroy', 'download', 'upload', 'clone'
+    ]
+
+  employees:
+    name: Employee
+    model: KepplerComandaControlEmployee
+    actions: [
+      'index', 'create', 'update', 'destroy', 'download', 'upload', 'clone'
+    ]
+
   tables:
     name: Table
     model: KepplerComandaControlTable

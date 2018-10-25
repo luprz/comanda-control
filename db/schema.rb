@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_10_25_161922) do
+ActiveRecord::Schema.define(version: 2018_10_25_182446) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -116,6 +116,23 @@ ActiveRecord::Schema.define(version: 2018_10_25_161922) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["deleted_at"], name: "index_keppler_capsules_capsules_on_deleted_at"
+  end
+
+  create_table "keppler_comanda_control_employees", force: :cascade do |t|
+    t.string "photo"
+    t.string "firstname"
+    t.string "lastname"
+    t.string "phone"
+    t.string "email"
+    t.integer "position"
+    t.datetime "deleted_at"
+  end
+
+  create_table "keppler_comanda_control_orders", force: :cascade do |t|
+    t.integer "employee_id"
+    t.integer "table_id"
+    t.integer "position"
+    t.datetime "deleted_at"
   end
 
   create_table "keppler_comanda_control_tables", force: :cascade do |t|

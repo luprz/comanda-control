@@ -9,6 +9,7 @@ module KepplerFrontend
     # begin show_table
     def show_table
       @table = find_table({id: params[:id]})
+      @order = new_order({table_id: @table.id})
     end
     # end show_table
     # begin home

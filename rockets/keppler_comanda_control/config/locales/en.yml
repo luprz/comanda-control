@@ -7,10 +7,16 @@ en:
     permissions:
     models:
       singularize:
+        order: order
+        employee: employee
         table: table
       pluralize:
+        orders: orders
+        employees: employees
         tables: tables
     modules:
+      admin/order: Order
+      admin/employees: Employees
       admin/table: Table
     messages:
     actions:

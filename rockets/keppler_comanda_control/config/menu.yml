@@ -6,6 +6,20 @@ menu:
     icon: layers
     model: User
     submenu:
+      - order:
+          name: order
+          url_path: /admin/comanda_control/orders
+          icon: layers
+          current: ['/admin/comanda_control/orders']
+          model: KepplerComandaControl::Order
+
+      - employee:
+          name: employees
+          url_path: /admin/comanda_control/employees
+          icon: layers
+          current: ['/admin/comanda_control/employees']
+          model: KepplerComandaControl::Employee
+
       - tables:
           name: tables
           url_path: /admin/comanda_control/tables
