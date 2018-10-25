@@ -1,0 +1,18 @@
+es:
+  keppler:
+    sidebar-menu:
+      keppler-comanda-control: Keppler comanda control
+      keppler-comanda-control-submenu:
+    permissions:
+    models:
+      singularize:
+      pluralize:
+    modules:
+    messages:
+    actions:
+  activerecord:
+    attributes:
+    errors:
+      messages:
+  errors:
+  helpers:

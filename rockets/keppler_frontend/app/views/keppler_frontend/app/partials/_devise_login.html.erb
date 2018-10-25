@@ -1,0 +1,33 @@
+<!-- begin devise_login -->
+<div id='devise_login'>
+  <%- unless current_user %>
+    <%= form_for(User.new, :as => User.new, :url => session_path(User.new), :html => { :role => 'form'}) do |f| %>
+      <%= f.text_field :path, type: :hidden, class: "form-control validate", :value => "#{controller_path}##{action_name}" %>
+      <div class="form-group">
+        <div>
+          <label for="inputEmail3" class="col-sm-2 control-label"><%= translate("email") %></label>
+          <%= f.email_field :email, :autofocus => true, class: "form-control validate", :placeholder => translate("email") %>
+        </div>
+      </div>
+      <div class="form-group">
+        <div>
+          <label for="inputPassword3" class="col-sm-2 control-label"><%= translate("password") %></label>
+          <%= f.password_field :password, :autofocus => true, class: "form-control validate #{'invalid' if flash[:alert]}", :placeholder => translate("password") %>
+        </div>
+      </div>
+      <div class="form-group has-feedback">
+        <div class="devise-errors center-align">
+          <%- flash.each do |name, msg| %>
+            <%= content_tag :div, msg, :id => "flash_#{name}" if msg.is_a?(String) %>
+          <% end %>
+        </div>
+      </div>
+      <div class="form-group pull-right">
+        <div class="col-lg-12">
+          <%= f.submit translate("login"), class: 'btn btn-primary' %>
+        </div>
+      </div>
+    <% end %>
+  <%- end %>
+</div>
+<!-- end devise_login -->

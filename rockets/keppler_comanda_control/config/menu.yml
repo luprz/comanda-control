@@ -1,0 +1,14 @@
+menu:
+  keppler_comanda_control:
+    name: Keppler Comanda Control
+    current: ['/']
+    url_path: /
+    icon: layers
+    model: User
+    submenu:
+      # - new:
+      #     name: + Add new module
+      #     url_path: /url_path
+      #     current: ['/current_path']
+      #     enviroment: development
+      #     model: User

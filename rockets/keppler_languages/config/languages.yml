@@ -1,0 +1,20 @@
+---
+- id: 1
+  name: es
+  active: true
+  field_ids:
+  - 8
+  - 9
+  - 10
+  - 11
+  position: 1
+  deleted_at: 
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2018-10-25 14:58:19.320017000 Z
+    zone: &1 !ruby/object:ActiveSupport::TimeZone
+      name: America/Caracas
+    time: 2018-10-25 10:58:19.320017000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2018-10-25 14:58:25.178230000 Z
+    zone: *1
+    time: 2018-10-25 10:58:25.178230000 Z
