@@ -4,7 +4,13 @@ module KepplerFrontend
   class App::FrontendController < App::AppController
     # End callbacks area (don't delete)
     include FrontsHelper
+    include KepplerComandaControl::ApplicationHelper
     layout 'layouts/keppler_frontend/app/layouts/application'
+    # begin show_table
+    def show_table
+      @table = find_table({id: params[:id]})
+    end
+    # end show_table
     # begin home
     def home
       # Insert ruby code...

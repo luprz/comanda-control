@@ -1,1 +1,37 @@
-/* Keppler - home.scss file */
+.navbar-brand
+{
+ font-family: "Patua One";
+}
+
+.navbar {
+  .btn-logout
+  {
+   position: relative !important;
+   top: 8px !important;
+  }
+}
+
+.zppl-col {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.zppl-table-link:hover,
+.zppl-table-link:focus,
+.zppl-table-link:active {
+	text-decoration: none;
+}
+
+.zppl-table {
+  background: #c0c0c0;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #404040;
+
+  h1 {
+    font-size: 10rem;
+  }
+}

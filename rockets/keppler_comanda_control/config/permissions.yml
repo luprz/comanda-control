@@ -1,1 +1,7 @@
 modules:
+  tables:
+    name: Table
+    model: KepplerComandaControlTable
+    actions: [
+      'index', 'create', 'update', 'destroy', 'download', 'upload', 'clone'
+    ]

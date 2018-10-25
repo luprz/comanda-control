@@ -1,13 +1,17 @@
 en:
   keppler:
     sidebar-menu:
-      keppler-comanda-control: Keppler comanda control
-      keppler-comanda-control-submenu:
+      comanda-control: Comanda control
+      comanda-control-submenu:
+        table: Table
     permissions:
     models:
       singularize:
+        table: table
       pluralize:
+        tables: tables
     modules:
+      admin/table: Table
     messages:
     actions:
   activerecord:

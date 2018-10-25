@@ -48,3 +48,19 @@
     utc: 2018-10-25 15:25:43.514449000 Z
     zone: *1
     time: 2018-10-25 11:25:43.514449000 Z
+- id: 4
+  name: show_table
+  url: "/table/:id"
+  method: GET
+  active: true
+  format_result: HTML
+  position: 4
+  deleted_at: 
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2018-10-25 17:34:17.915122000 Z
+    zone: *1
+    time: 2018-10-25 13:34:17.915122000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2018-10-25 17:34:17.915122000 Z
+    zone: *1
+    time: 2018-10-25 13:34:17.915122000 Z

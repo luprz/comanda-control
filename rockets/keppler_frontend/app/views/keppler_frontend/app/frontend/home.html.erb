@@ -1,6 +1,23 @@
 <keppler-view id='home'>
+<!-- Keppler Section -->
 <div class="container">
-  <h1> home template </h1>
-  <%= link_to translate('logout'), destroy_session_path(current_user), class: 'btn btn-default' %>
+  <keppler-no-edit id="zppl-tables-title">
+    <h1> <%= translate('tables') %></h1>
+  </keppler-no-edit>
+  <div class="row">
+    <%- all_tables.each do |table| %>
+      <div class="zppl-col col-lg-3">
+        <a class ="zppl-table-link" href="/table/<%=table.id%>">
+          <div class="zppl-table">
+            <div>
+              <h1>
+                <%= table.name %>
+              </h1>
+            </div>
+          </div>
+        </a>
+      </div>
+    <%- end %>
+  </div>
 </div>
 </keppler-view>

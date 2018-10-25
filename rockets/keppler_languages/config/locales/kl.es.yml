@@ -3,8 +3,11 @@ es:
   login: Entrar
   email: Correo
   password: Contraseña
+  logout: Cerrar sesión
   keppler_languages:
     login: Entrar
     email: Correo
     password: Contraseña
     logout: Cerrar sesión
+    tables: Mesas
+    table: Mesa

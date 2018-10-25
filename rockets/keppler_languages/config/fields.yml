@@ -1,58 +1,86 @@
 ---
-- id: 8
+- id: 12
   key: login
   value: Entrar
   language_id: 1
   position: 1
   deleted_at: 
   created_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: 2018-10-25 15:34:49.089953000 Z
+    utc: 2018-10-25 16:00:31.087055000 Z
     zone: &1 !ruby/object:ActiveSupport::TimeZone
       name: America/Caracas
-    time: 2018-10-25 11:34:49.089953000 Z
+    time: 2018-10-25 12:00:31.087055000 Z
   updated_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: 2018-10-25 15:34:49.089953000 Z
+    utc: 2018-10-25 16:00:31.087055000 Z
     zone: *1
-    time: 2018-10-25 11:34:49.089953000 Z
-- id: 9
+    time: 2018-10-25 12:00:31.087055000 Z
+- id: 13
   key: email
   value: Correo
   language_id: 1
   position: 2
   deleted_at: 
   created_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: 2018-10-25 15:34:49.105898000 Z
+    utc: 2018-10-25 16:00:31.127928000 Z
     zone: *1
-    time: 2018-10-25 11:34:49.105898000 Z
+    time: 2018-10-25 12:00:31.127928000 Z
   updated_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: 2018-10-25 15:34:49.105898000 Z
+    utc: 2018-10-25 16:00:31.127928000 Z
     zone: *1
-    time: 2018-10-25 11:34:49.105898000 Z
-- id: 10
+    time: 2018-10-25 12:00:31.127928000 Z
+- id: 14
   key: password
   value: Contraseña
   language_id: 1
   position: 3
   deleted_at: 
   created_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: 2018-10-25 15:34:49.122626000 Z
+    utc: 2018-10-25 16:00:31.144464000 Z
     zone: *1
-    time: 2018-10-25 11:34:49.122626000 Z
+    time: 2018-10-25 12:00:31.144464000 Z
   updated_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: 2018-10-25 15:34:49.122626000 Z
+    utc: 2018-10-25 16:00:31.144464000 Z
     zone: *1
-    time: 2018-10-25 11:34:49.122626000 Z
-- id: 11
+    time: 2018-10-25 12:00:31.144464000 Z
+- id: 15
   key: logout
   value: Cerrar sesión
   language_id: 1
   position: 4
   deleted_at: 
   created_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: 2018-10-25 15:34:49.139682000 Z
+    utc: 2018-10-25 16:00:31.160889000 Z
     zone: *1
-    time: 2018-10-25 11:34:49.139682000 Z
+    time: 2018-10-25 12:00:31.160889000 Z
   updated_at: !ruby/object:ActiveSupport::TimeWithZone
-    utc: 2018-10-25 15:34:49.139682000 Z
+    utc: 2018-10-25 16:00:31.160889000 Z
     zone: *1
-    time: 2018-10-25 11:34:49.139682000 Z
+    time: 2018-10-25 12:00:31.160889000 Z
+- id: 16
+  key: tables
+  value: Mesas
+  language_id: 1
+  position: 5
+  deleted_at: 
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2018-10-25 16:00:31.177456000 Z
+    zone: *1
+    time: 2018-10-25 12:00:31.177456000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2018-10-25 16:00:31.177456000 Z
+    zone: *1
+    time: 2018-10-25 12:00:31.177456000 Z
+- id: 17
+  key: table
+  value: Mesa
+  language_id: 1
+  position: 6
+  deleted_at: 
+  created_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2018-10-25 16:00:31.211168000 Z
+    zone: *1
+    time: 2018-10-25 12:00:31.211168000 Z
+  updated_at: !ruby/object:ActiveSupport::TimeWithZone
+    utc: 2018-10-25 16:00:31.211168000 Z
+    zone: *1
+    time: 2018-10-25 12:00:31.211168000 Z

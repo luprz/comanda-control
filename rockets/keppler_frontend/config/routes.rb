@@ -1,4 +1,5 @@
 KepplerFrontend::Engine.routes.draw do
+  get '/table/:id', to: 'app/frontend#show_table', as: :show_table
   get '/home', to: 'app/frontend#home', as: :home
   get '/', to: 'app/frontend#index', as: :index
   root to: 'app/frontend#keppler', as: :keppler
